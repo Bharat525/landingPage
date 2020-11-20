@@ -16,6 +16,7 @@ main {
     padding: 0 5rem;
     background-position: top;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 nav {
@@ -32,7 +33,7 @@ nav {
 }
 
 .nav-links li {
-    padding-left: 10rem;
+    padding-left: 1rem;
     font-size: 1.8rem;
 }
 
@@ -46,10 +47,20 @@ nav {
     position: absolute;
     left: 50%;
     top: 30%;
-    transform: translate(-50%, -30);
+    transform: translate(-50%, 30);
     font-family: "lobster" cursive;
-    font-size: 6rem;
+    font-size: 2rem;
 }
+
+
+/* .big-text {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    left: 0;
+    font-size: 2rem;
+    font-family: "lobster" cursive;
+} */
 
 .intro {
     display: flex;
@@ -64,10 +75,10 @@ nav {
 }
 
 .intro-text {
-    width: 50%;
+    width: 70%;
     color: blanchedalmond;
     font-family: "Heebo";
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 .slider {
@@ -88,4 +99,26 @@ nav {
 .hide span {
     transform: translateY(100%);
     display: inline-block;
+}
+
+@media screen and (max-width: 620px) {
+    .landing {
+        padding: 0 0;
+        background-position: center;
+    }
+    .nav-links li {
+        padding-right: 20px;
+        font-size: 20px;
+        margin-left: -25px
+    }
+    #logo {
+        font-size: 2rem;
+        padding-left: 1rem;
+    }
+    .big-text {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        left: 0;
+    }
 }
